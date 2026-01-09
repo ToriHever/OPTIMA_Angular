@@ -1,12 +1,28 @@
-import { Component, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { Component } from '@angular/core';
+import { RouterOutlet, RouterLink } from '@angular/router';
+import { HeaderComponent } from './components/header/header';
+import { Footer } from "./components/footer/footer";
+import { CourierModal } from "./modals/courier-modal/courier-modal";
+import { RepairStatusModal } from "./modals/repair-status-modal/repair-status-modal";
+import { CertificateModal } from "./modals/certificate-modal/certificate-modal";
+import { RepairsModal } from "./modals/repairs-modal/repairs-modal";
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  standalone: true,
+  imports: [
+    RouterOutlet,
+    RouterLink,
+    HeaderComponent,
+    Footer,
+    CourierModal,
+    RepairStatusModal,
+    CertificateModal,
+    RepairsModal
+],
   templateUrl: './app.html',
-  styleUrl: './app.css'
+  styleUrls: ['./app.css']
 })
-export class App {
-  protected readonly title = signal('optima-service');
+export class AppComponent {
+  title = 'optima-service';
 }
