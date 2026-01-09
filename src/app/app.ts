@@ -12,7 +12,6 @@ import { RepairsModal } from "./modals/repairs-modal/repairs-modal";
   standalone: true,
   imports: [
     RouterOutlet,
-    RouterLink,
     HeaderComponent,
     Footer,
     CourierModal,
