@@ -22,6 +22,6 @@ import { RepairsModal } from "./modals/repairs-modal/repairs-modal";
   templateUrl: './app.html',
   styleUrls: ['./app.css']
 })
-export class AppComponent {
+export class App {
   title = 'optima-service';
 }
